@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwaybf65kfl4n"]
+
+[ext_resource type="Texture2D" uid="uid://cscgex61mw8qu" path="res://sprites/grapple_sprite_bad.png" id="1_2uisn"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_2uisn")

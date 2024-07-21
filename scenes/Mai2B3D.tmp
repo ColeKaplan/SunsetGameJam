@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b78qci0v3mskw"]
+
+[ext_resource type="PackedScene" uid="uid://bp7up56nmlbdn" path="res://scenes/Tilemap.tscn" id="1_38ahd"]
+[ext_resource type="Script" path="res://scenes/MainScene.gd" id="1_esaxl"]
+[ext_resource type="PackedScene" uid="uid://hgc6hagjqbi4" path="res://scenes/Character.tscn" id="2_2m662"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_esaxl")
+
+[node name="TileMap" parent="." instance=ExtResource("1_38ahd")]
+position = Vector2(371, 211)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_2m662")]
+position = Vector2(605, 500)
+scale = Vector2(0.24, 0.24)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(591, 370)
+zoom = Vector2(2, 2)
